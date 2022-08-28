@@ -1,0 +1,56 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+@tailwind variants;
+
+.content {
+  @apply max-w-xl mt-0 mb-0 ml-auto mr-auto pl-4 pr-4; 
+}
+
+.alin-bols {
+  @apply fixed bottom-0 right-0 z-10;
+}
+
+h1 {
+  @apply text-5xl;
+}
+
+.title {
+  @apply mb-8 text-center;
+}
+
+.title>span {
+  @apply text-amber-500 font-bold;
+}
+
+p {
+  @apply text-sm text-gray-500;
+}
+
+p.description {
+  @apply mb-16
+}
+
+p.description>span {
+  @apply text-amber-500;
+}
+
+footer.content {
+  @apply flex justify-center border-t border-t-gray-200
+}
+
+footer.content a {
+  @apply pl-2 pr-2 pt-1 pb-1 mt-0.5 text-amber-500;
+}
+
+@media (max-width: 412px) {
+  .content {
+    @apply max-w-xs; 
+  }
+}
+
+@media (max-width: 352px) {
+  .content {
+    @apply max-w-xs; 
+  }
+}
